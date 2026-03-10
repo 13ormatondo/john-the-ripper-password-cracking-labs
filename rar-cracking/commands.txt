@@ -1,0 +1,5 @@
+rar2john secure.rar > rar_hash.txt
+john --wordlist=/usr/share/wordlists/rockyou.txt rar_hash.txt
+unrar x secure.rar
+cat flag.txt
+THM{r4r_4rch1ve5_th15_t1m3}
